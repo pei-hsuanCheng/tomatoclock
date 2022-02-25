@@ -3,7 +3,7 @@ import {ReactComponent as IconBell} from '../assets/svg/icon_bell.svg';
 import {ReactComponent as IconAdd} from '../assets/svg/icon_add.svg';
 import IconButton from '../component/IconButton';
 import TextField from '../component/TextField';
-import ToDoItem from '../component/ToDoItem';
+import ToDoList from './ToDoList';
 
 const Main = () => {
   const [mission, setMission] = useState('');
@@ -19,7 +19,7 @@ const Main = () => {
           <IconAdd className='w-full h-full fill-[#F2F0C9]'/>
         </IconButton>
       </TextField>
-      <ToDoItem task='tmp' isDone={isDone} setIsDone={setIsDone} />
+      <ToDoList />
     </div>
   )
 };
