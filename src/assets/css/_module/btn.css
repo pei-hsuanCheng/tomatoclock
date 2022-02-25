@@ -1,0 +1,15 @@
+.btn-icon {
+  transition: background-color 0.3s;
+}
+
+.btn-icon.outlined {
+  @apply border border-white bg-[#d9343f];
+}
+
+.btn-icon.filled {
+  @apply bg-[#d9343f];
+}
+
+.btn-icon:hover {
+  @apply bg-[#aa2b33];
+}

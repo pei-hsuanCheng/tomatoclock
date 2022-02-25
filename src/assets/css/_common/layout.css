@@ -1,0 +1,36 @@
+.l-wrap::before,
+.l-wrap::after,
+.l-wrap-cnt::before,
+.l-wrap-cnt::after {
+  content: "";
+
+  @apply absolute rounded-[50%] z-[-1];
+}
+
+.l-wrap::before {
+  background-image: linear-gradient(#BC2B35,#D9343F);
+
+  @apply w-[716px] h-[716px] left-0 top-1/2 -translate-y-1/2 -translate-x-1/2;
+}
+
+.l-wrap::after {
+  background-image: radial-gradient(#D9343F 40%, #BC2B35 40%);
+  background-position: 0 0;
+  background-size: 14px 14px;
+
+  @apply left-1/2 w-[300px] h-[300px] top-0 -translate-x-1/2 -translate-y-1/2 mt-[-25px] ml-[-230px];
+}
+
+.l-wrap-cnt::before {
+  background-image: linear-gradient(#BC2B35,#D9343F);
+
+  @apply w-[716px] h-[716px] right-0 top-1/2 -translate-y-1/2 translate-x-1/2;
+}
+
+.l-wrap-cnt::after {
+  background-image: radial-gradient(#D9343F 40%, #BC2B35 40%);
+  background-position: 0 0;
+  background-size: 14px 14px;
+
+  @apply left-1/2 w-[464px] h-[464px] bottom-0 -translate-x-1/2 translate-y-1/2 mb-[-40px] ml-[230px];
+}

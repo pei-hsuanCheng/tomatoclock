@@ -1,12 +1,11 @@
 export const initTaskListState = {
-  taskList: []
+  taskList: [],
+  taskItem: {
+    status: false,
+    label: 'template task',
+    processing: false,
+  }
  };
-
- const initTaskItem = {
-  status: false,
-  label: 'template task',
-  processing: false,
-};
   
  const taskListReducer = (state, action) => {
   const { payload } = action;

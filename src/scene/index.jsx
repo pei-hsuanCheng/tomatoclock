@@ -7,10 +7,12 @@ import '../assets/css/_common/layout.css';
 const Index = () => {
   
   return (
-    <div className="min-h-screen bg-[#BC2B35]">
-      <Header />
-      <Nav />
-      <Main />
+    <div className="l-wrap relative z-[0] min-h-screen overflow-hidden bg-[#BC2B35] text-white">
+      <div className='l-wrap-cnt'>
+        <Header />
+        <Nav />
+        <Main />
+      </div>
     </div>
   )
 }

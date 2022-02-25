@@ -1,0 +1,6 @@
+.hd-title > *:not(:first-child)::before {
+  content: "";
+  width: 1px;
+
+  @apply absolute top-1/2 left-0 -translate-y-1/2 bg-white h-full;
+}

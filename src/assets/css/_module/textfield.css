@@ -1,0 +1,27 @@
+.textfield {
+  @apply py-[10px] text-[24px] box-border;
+}
+
+.textfield-input:focus-visible {
+  outline: 0px;
+}
+
+.textfield-input::placeholder {
+  @apply text-[#F2F0C9] text-opacity-50;
+}
+
+.textfield {
+  @apply text-[#F2F0C9];
+}
+
+.textfield.standard {
+  @apply border-b-[1px] border-[#F2F0C9] border-solid;
+}
+
+.textfield.filled {
+  @apply bg-[#F2F0C9] text-[#BC2B35] rounded-[10px] px-[26px];
+}
+
+.textfield.filled > .textfield-input::placeholder {
+  @apply text-[#BC2B35] text-opacity-50;
+}

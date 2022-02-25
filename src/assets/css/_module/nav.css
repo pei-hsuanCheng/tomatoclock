@@ -1,0 +1,46 @@
+.nav-cls-btn:hover>* {
+  @apply bg-[#ccad87];
+}
+
+.nav-cls-btn.active>:nth-child(1) {
+  margin-top: 0;
+  transform: translate(-50%,-50%) rotate(45deg);
+}
+
+.nav-cls-btn.active>:nth-child(3) {
+  width: 50px;
+  margin-top: 0;
+  margin-left: 0;
+  transform: translate(-50%,-50%) rotate(-45deg);
+}
+
+.nav-cls-btn.active>:nth-child(2) {
+  transform:  translate(-50%,-50%) scaleX(0);
+}
+
+.nav-btns {
+  @apply -translate-x-full;
+}
+
+
+.nav-cnt>* {
+  background-image: linear-gradient(to left,#BC2B35, #D9343F);
+}
+
+:not(.active)>.nav-cnt {
+  @apply w-0;
+}
+
+.active>.nav-cnt {
+  @apply w-[900px];
+}
+
+.active>.nav-btns {
+  @apply translate-x-0;
+}
+
+.nav-cnt>*::before {
+  content: "";
+
+  @apply absolute top-1/2 left-0 -translate-y-1/2 w-[1500px] h-[1500px] rounded-[50%] bg-[#D9343F] z-[-1] ml-[-118px];
+}
